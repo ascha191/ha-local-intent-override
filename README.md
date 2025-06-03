@@ -18,14 +18,16 @@ This custom component overrides the filter function at runtime and allows all lo
 ### Option 1: HACS (Recommended)
 
 1. **Open HACS** in Home Assistant
-2. Go to **Integrations** → **⋮** (Three dots) → **Custom repositories**
-3. **Add repository**:
-   - URL: `https://github.com/ascha191/ha-local-intent-override`
-   - Category: `Integration`
-4. Click **Add**
-5. Find **Local Intent Override** in the list and click **Install**
-6. **Restart Home Assistant**
-7. **Add configuration** (see below)
+2. Go to **Integrations**
+3. Click **⋮** (Three dots menu) → **Custom repositories**
+4. **Add custom repository**:
+   - **Repository**: `https://github.com/ascha191/ha-local-intent-override`
+   - **Category**: `Integration`
+5. Click **Add**
+6. **Search for "Local Intent Override"** in HACS integrations
+7. Click **Download** and then **Download** again to confirm
+8. **Restart Home Assistant**
+9. **Add configuration** (see below)
 
 ### Option 2: Manual Installation
 

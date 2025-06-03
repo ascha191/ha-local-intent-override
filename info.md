@@ -1,29 +1,29 @@
 # Local Intent Override
 
-Diese Custom Component ermöglicht es, dass lokale Intents (wie GetState) auch dann lokal verarbeitet werden, wenn ein LLM-Agent aktiv ist.
+This custom component allows local intents (like GetState) to be processed locally even when an LLM-Agent is active.
 
-## ✨ Funktionen
+## ✨ Features
 
-- **Non-invasive Lösung**: Keine Änderungen am Home Assistant Core erforderlich
-- **Runtime Patching**: Überschreibt zur Laufzeit die Intent-Filterfunktion
-- **Automatische Wiederherstellung**: Stellt ursprüngliches Verhalten beim Deaktivieren wieder her
-- **Debug-Logging**: Umfassendes Logging für Fehlerbehebung
+- **Non-invasive solution**: No changes to Home Assistant Core required
+- **Runtime patching**: Overrides intent filter function at runtime
+- **Automatic restoration**: Restores original behavior when disabled
+- **Debug logging**: Comprehensive logging for troubleshooting
 
 ## 🔧 Installation
 
-1. Installieren Sie diese Integration über HACS
-2. Fügen Sie die folgende Zeile zu Ihrer `configuration.yaml` hinzu:
+1. Install this integration via HACS
+2. Add the following line to your `configuration.yaml`:
    ```yaml
    local_intent_override:
    ```
-3. Starten Sie Home Assistant neu
+3. Restart Home Assistant
 
-## 📋 Kompatibilität
+## 📋 Compatibility
 
 - **Home Assistant**: 2024.12.0+
 - **HACS**: 1.6.0+
 - **Python**: 3.13+
 
-## 🐛 Problemlösung
+## 🐛 Troubleshooting
 
-Die Component protokolliert ihre Aktivitäten im Home Assistant Log. Aktivieren Sie Debug-Logging für `custom_components.local_intent_override` um detaillierte Informationen zu erhalten.
+The component logs its activities to the Home Assistant log. Enable debug logging for `custom_components.local_intent_override` for detailed information.
